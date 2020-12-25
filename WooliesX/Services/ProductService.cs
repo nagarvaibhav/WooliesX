@@ -19,35 +19,32 @@ namespace WooliesX.Services
 
         public async Task<IEnumerable<Product>> SortProduct(string sortOption)
         {
-            if (string.Compare(sortOption, Constants.Recommended, false) == 0)
+            var products = await _productDataProvider.GetProducts();
+            switch (sortOption.ToLower())
             {
-                var shopersList = await _productDataProvider.GetShoppersHistory();
-                return shopersList.SelectMany(x => x.Products).GroupBy(x => x.Name).OrderByDescending(x=>x.Count()).Select(x => x.First());
+                case Constants.Low:
+                    products = products.ToList().OrderBy(x => x.Price);
+                    break;
+                case Constants.High:
+                    products = products.ToList().OrderByDescending(x => x.Price);
+                    break;
+                case Constants.Ascending:
+                    products = products.ToList().OrderBy(x => x.Name);
+                    break;
+                case Constants.Descending:
+                    products = products.ToList().OrderByDescending(x => x.Name);
+                    break;
+                case Constants.Recommended:
+                    var shopersList = await _productDataProvider.GetShoppersHistory();
+                    var recommendedProducts = shopersList.SelectMany(x => x.Products).GroupBy(x => x.Name).OrderByDescending(x => x.Count()).Select(x => new Product { Name = x.First().Name, Price = x.First().Price }).ToList();
+                    var reaminingProducts = products.Where(x => !recommendedProducts.Contains(x, new ProductComparer()));
+                    recommendedProducts.AddRange(reaminingProducts);
+                    return recommendedProducts;
+                default:
+                    products = null;
+                    break;
             }
-            else
-            {
-
-                var products = await _productDataProvider.GetProducts();
-                switch (sortOption.ToLower())
-                {
-                    case Constants.Low:
-                        products = products.ToList().OrderBy(x => x.Price);
-                        break;
-                    case Constants.High:
-                        products = products.ToList().OrderByDescending(x => x.Price);
-                        break;
-                    case Constants.Ascending:
-                        products = products.ToList().OrderBy(x => x.Name);
-                        break;
-                    case Constants.Descending:
-                        products = products.ToList().OrderByDescending(x => x.Name);
-                        break;
-                    default:
-                        products = null;
-                        break;
-                }
-                return products;
-            }
+            return products;
         }
     }
 }

@@ -29,7 +29,7 @@ namespace WooliesX.Tests.Controller
         {
             var products = MockDataProvider.GetProducts();
             _productService.SortProduct(sortOption).Returns(products);
-            var result = await _productController.Get(sortOption) as OkObjectResult;
+            var result = await _productController.GetProducts(sortOption) as OkObjectResult;
             var productsResponse = result.Value as List<Product>;
             Assert.IsNotNull(result);
             Assert.AreEqual(200, result.StatusCode);
@@ -42,7 +42,7 @@ namespace WooliesX.Tests.Controller
         [Test]
         public async Task GetProduct_Should_Return_BadRequest_Response_For_Empty_SortOption()
         {
-            var result = await _productController.Get("") as BadRequestObjectResult;
+            var result = await _productController.GetProducts("") as BadRequestObjectResult;
             var productsResponse = result.Value;
             Assert.IsNotNull(result);
             Assert.AreEqual(400, result.StatusCode);
@@ -56,7 +56,7 @@ namespace WooliesX.Tests.Controller
         {
             List<Product> products = null;
             _productService.SortProduct("test").Returns(products);
-            var result = await _productController.Get("test") as BadRequestObjectResult;
+            var result = await _productController.GetProducts("test") as BadRequestObjectResult;
             var productsResponse = result.Value;
             Assert.IsNotNull(result);
             Assert.AreEqual(400, result.StatusCode);

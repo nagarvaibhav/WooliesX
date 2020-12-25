@@ -37,9 +37,7 @@ namespace WooliesX.Tests
             {
                 CustomerId = 23,
                 Products = new List<Product> {
-                new Product {Name = "test", Price = 45, Quantity = 1 },
                 new Product {Name = "test1", Price = 51, Quantity = 2 },
-                new Product { Name = "test2", Price = 43, Quantity = 1 }
                 }
             });
             result.Add(new ShoppersHistory

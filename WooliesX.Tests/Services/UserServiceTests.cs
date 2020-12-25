@@ -1,9 +1,7 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using WooliesX.DTO;
 using WooliesX.Services;
+using WooliesX.Utility;
 
 namespace WooliesX.Tests.Services
 {
@@ -17,7 +15,7 @@ namespace WooliesX.Tests.Services
             var result = userService.GetUserAndToken();
             Assert.IsNotNull(result);
             Assert.IsInstanceOf(typeof(UserResponse), result);
-            Assert.AreEqual("Test", result.User);
+            Assert.AreEqual(Constants.User, result.Name);
         }
     }
 }

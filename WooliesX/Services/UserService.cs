@@ -1,5 +1,6 @@
 ﻿using System;
 using WooliesX.DTO;
+using WooliesX.Utility;
 
 namespace WooliesX.Services
 {
@@ -10,7 +11,7 @@ namespace WooliesX.Services
             return new UserResponse
             {
                 Token = Guid.NewGuid().ToString(),
-                User = "Test"
+                Name = Constants.User
             };
         }
     }

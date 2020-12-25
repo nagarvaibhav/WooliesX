@@ -20,6 +20,7 @@ namespace WooliesX.Controllers
         }
 
         [HttpGet]
+        [Route("Sort")]
         public async Task<IActionResult> GetProducts(string sortOption)
         {
             try

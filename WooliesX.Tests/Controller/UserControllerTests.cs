@@ -26,14 +26,14 @@ namespace WooliesX.Tests.Controller
         [Test]
         public void GetMethod_Should_Return_SucessFull_Response()
         {
-            _userService.GetUserAndToken().Returns(new UserResponse { User = "Test", Token = "abcxxx" });
-            var result = _userController.Get() as OkObjectResult;
+            _userService.GetUserAndToken().Returns(new UserResponse { Name = "Test", Token = "abcxxx" });
+            var result = _userController.GetUser() as OkObjectResult;
             var user = result.Value as UserResponse;
             Assert.IsNotNull(result);
             Assert.AreEqual(200, result.StatusCode);
             Assert.IsNotNull(user);
             Assert.IsInstanceOf(typeof(OkObjectResult), result);
-            Assert.AreEqual("Test", user.User);
+            Assert.AreEqual("Test", user.Name);
             Assert.AreEqual("abcxxx", user.Token);
         }
 
@@ -42,7 +42,7 @@ namespace WooliesX.Tests.Controller
         {
             _userService.When(x => x.GetUserAndToken()).Do(x => { throw new Exception("Error in getting Token and User"); });
 
-            var result = _userController.Get() as ObjectResult;
+            var result = _userController.GetUser() as ObjectResult;
             var response = result.Value;
             Assert.IsNotNull(result);
             Assert.IsNotNull(response);

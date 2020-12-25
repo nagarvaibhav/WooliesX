@@ -47,6 +47,10 @@ namespace WooliesX.Tests.Services
         [Test]
         public async Task SortProduct_Should_Return_Sorted_Products_BasedOn_Recommended_Products()
         {
+
+            var products = MockDataProvider.GetProducts();
+            _productDataProvider.GetProducts().Returns(products);
+
             var shoppersHistory = MockDataProvider.GetShoppersHistory();
             _productDataProvider.GetShoppersHistory().Returns(shoppersHistory);
 
