@@ -1,5 +1,5 @@
 ### What is this repository for? ###
-This repo if for Wooliex X Technical Test.It is created in .netcore 2.1. It used Nunit and NSubstitute for UnitTesting and Nlog for logging.
+This repo if for Wooliex X Technical Test.It is created in .netcore 2.1. It uses Nunit and NSubstitute for UnitTesting and Nlog for logging.
 
 ### How do I get set up? ###
 This is a ASP.NET core application hosted in AWS Lambda.Take latest and Run the app locally using visual studio.
