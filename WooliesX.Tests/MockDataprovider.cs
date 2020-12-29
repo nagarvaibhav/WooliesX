@@ -10,9 +10,9 @@ namespace WooliesX.Tests
         {
             return new List<Product>
             {
-                new Product {Name = "test", Price = 45, Quantity = 1 },
-                new Product {Name = "test1", Price = 51, Quantity = 2 },
-                new Product {Name = "test2", Price = 43, Quantity = 1 }
+                new Product {Name = "Test Product A", Price = 45, Quantity = 1 },
+                new Product {Name = "Test Product B", Price = 51, Quantity = 2 },
+                new Product {Name = "Test Product C", Price = 43, Quantity = 1 }
             };
         }
 
@@ -29,22 +29,22 @@ namespace WooliesX.Tests
             {
                 CustomerId = 123,
                 Products = new List<Product> {
-                new Product {Name = "test", Price = 45, Quantity = 5 },
-                new Product {Name = "test1", Price = 51, Quantity = 2 },
+                new Product {Name = "Test Product A", Price = 45, Quantity = 5 },
+                new Product {Name = "Test Product B", Price = 51, Quantity = 2 },
                 }
             });
             result.Add(new ShoppersHistory
             {
                 CustomerId = 23,
                 Products = new List<Product> {
-                new Product {Name = "test1", Price = 51, Quantity = 1 },
+                new Product {Name = "Test Product B", Price = 51, Quantity = 1 },
                 }
             });
             result.Add(new ShoppersHistory
             {
                 CustomerId = 54,
                 Products = new List<Product> {
-                new Product {Name = "test1", Price = 51, Quantity = 1 },
+                new Product {Name = "Test Product B", Price = 51, Quantity = 1 },
                 }
             });
             return result;
@@ -58,7 +58,7 @@ namespace WooliesX.Tests
             {
                 new TrolleyProduct
                 {
-                    Name = "Test1",
+                    Name = "Test Product A",
                     Price = 50
                 }
             };
@@ -66,7 +66,7 @@ namespace WooliesX.Tests
             {
                 new ProductQuantity
                 {
-                     Name = "Test1",
+                     Name = "Test Product A",
                      Quantity = productQuantity
                 }
             };
@@ -80,7 +80,7 @@ namespace WooliesX.Tests
                          {
                              new ProductQuantity
                              {
-                                Name = "Test1",
+                                Name = "Test Product A",
                                 Quantity = specialQuantity
                              }
                          },

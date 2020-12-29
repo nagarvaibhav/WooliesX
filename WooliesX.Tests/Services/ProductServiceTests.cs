@@ -30,19 +30,19 @@ namespace WooliesX.Tests.Services
             var resultLow = (await _productService.SortProduct(Constants.Low)).ToList();
             Assert.AreEqual(3, resultLow.Count);
             Assert.AreEqual(43, resultLow[0].Price);
-            Assert.AreEqual("test2", resultLow[0].Name);
+            Assert.AreEqual("Test Product C", resultLow[0].Name);
             var resultHigh = (await _productService.SortProduct(Constants.High)).ToList();
             Assert.AreEqual(3, resultHigh.Count);
             Assert.AreEqual(51, resultHigh[0].Price);
-            Assert.AreEqual("test1", resultHigh[0].Name);
+            Assert.AreEqual("Test Product B", resultHigh[0].Name);
             var resultAscending = (await _productService.SortProduct(Constants.Ascending)).ToList();
             Assert.AreEqual(3, resultAscending.Count);
             Assert.AreEqual(45, resultAscending[0].Price);
-            Assert.AreEqual("test", resultAscending[0].Name);
+            Assert.AreEqual("Test Product A", resultAscending[0].Name);
             var resultDescending = (await _productService.SortProduct(Constants.Descending)).ToList();
             Assert.AreEqual(3, resultDescending.Count);
             Assert.AreEqual(43, resultDescending[0].Price);
-            Assert.AreEqual("test2", resultDescending[0].Name);
+            Assert.AreEqual("Test Product C", resultDescending[0].Name);
         }
 
         [Test]
@@ -58,11 +58,11 @@ namespace WooliesX.Tests.Services
             var result = (await _productService.SortProduct(Constants.Recommended)).ToList();
             Assert.AreEqual(3, result.Count);
             Assert.AreEqual(45, result[0].Price);
-            Assert.AreEqual("test", result[0].Name);
+            Assert.AreEqual("Test Product A", result[0].Name);
             Assert.AreEqual(51, result[1].Price);
-            Assert.AreEqual("test1", result[1].Name);
+            Assert.AreEqual("Test Product B", result[1].Name);
             Assert.AreEqual(43, result[2].Price);
-            Assert.AreEqual("test2", result[2].Name);
+            Assert.AreEqual("Test Product C", result[2].Name);
         }
 
         [Test]
