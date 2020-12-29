@@ -1,5 +1,6 @@
 ﻿using NSubstitute;
 using NUnit.Framework;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using WooliesX.Provider;
@@ -56,12 +57,52 @@ namespace WooliesX.Tests.Services
 
             var result = (await _productService.SortProduct(Constants.Recommended)).ToList();
             Assert.AreEqual(3, result.Count);
-            Assert.AreEqual(51, result[0].Price);
-            Assert.AreEqual("test1", result[0].Name);
-            Assert.AreEqual(45, result[1].Price);
-            Assert.AreEqual("test", result[1].Name);
+            Assert.AreEqual(45, result[0].Price);
+            Assert.AreEqual("test", result[0].Name);
+            Assert.AreEqual(51, result[1].Price);
+            Assert.AreEqual("test1", result[1].Name);
             Assert.AreEqual(43, result[2].Price);
             Assert.AreEqual("test2", result[2].Name);
+        }
+
+        [Test]
+        public void GetTrolleyTotal_Should_Return_TrolleyTotal_Considering_Specials_For_Valid_Request()
+        {
+
+            var trolleyRequest = MockDataProvider.GetTrolleyRequest(5, 3);
+
+            var result = _productService.GetTrolleyTotal(trolleyRequest);
+            Assert.AreEqual(102, result);
+        }
+
+        [Test]
+        public void GetTrolleyTotal_Should_Return_TrolleyTotal_Ignoring_Specials_If_ProductQuantity_IsLessThan_Special_Quantity()
+        {
+
+            var trolleyRequest = MockDataProvider.GetTrolleyRequest(2, 3);
+
+            var result = _productService.GetTrolleyTotal(trolleyRequest);
+            Assert.AreEqual(100, result);
+        }
+
+        [Test]
+        public void GetTrolleyTotal_Should_Return_TrolleyTotal_Ignoring_Specials_If_Special_Is_NotPresent()
+        {
+
+            var trolleyRequest = MockDataProvider.GetTrolleyRequest(2, 3, true);
+
+            var result = _productService.GetTrolleyTotal(trolleyRequest);
+            Assert.AreEqual(100, result);
+        }
+
+        [Test]
+        public void GetTrolleyTotal_Should_Throw_Exception_ForInvalid_Request()
+        {
+
+            var trolleyRequest = MockDataProvider.GetTrolleyRequest(2, 3, true);
+            trolleyRequest.Products = null;
+            var result = 
+            Assert.Throws<Exception>(() => _productService.GetTrolleyTotal(trolleyRequest));
         }
     }
 }

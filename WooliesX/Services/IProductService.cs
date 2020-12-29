@@ -7,5 +7,6 @@ namespace WooliesX.Services
     public interface IProductService
     {
         Task<IEnumerable<Product>> SortProduct(string sortOption);
+        decimal GetTrolleyTotal(TrolleyRequest request);
     }
 }

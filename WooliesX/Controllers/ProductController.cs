@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
+using WooliesX.DTO;
 using WooliesX.Services;
 
 namespace WooliesX.Controllers
@@ -38,6 +40,35 @@ namespace WooliesX.Controllers
             {
                 _logger.LogError(ex, "Error in getting products");
                 return StatusCode(500, "error is getting products");
+            }
+        }
+
+        [HttpPost]
+        [Route("trolleyTotal")]
+        public IActionResult TrolleyTotal([FromBody] TrolleyRequest request)
+        {
+            try
+            {
+                if (request.Products == null || !request.Products.Any())
+                    return BadRequest("Please add Product");
+
+                if (request.Quantities == null || !request.Quantities.Any())
+                    return BadRequest("Please add Product Quantity");
+
+                var productName = request.Products.First().Name;
+
+                if (!request.Quantities.Select(x => x.Name.Equals(productName)).First())
+                {
+                    return BadRequest("Please add Quantity for product: " + productName);
+                }
+
+                var result = _productService.GetTrolleyTotal(request);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error in calculating trolley total");
+                return StatusCode(500, "Error in calculating trolley total");
             }
         }
     }

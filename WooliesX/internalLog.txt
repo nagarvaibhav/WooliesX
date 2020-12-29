@@ -327,3 +327,247 @@
 2020-12-25 17:56:57.1505 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Vaibhav\Work\R&D\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
 2020-12-25 17:56:57.1673 Info Configuration initialized.
 2020-12-25 17:56:57.1673 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 21:47:45.7183 Info Message Template Auto Format enabled
+2020-12-28 21:47:45.7353 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 21:47:45.7869 Info Adding target FileTarget(Name=alldata)
+2020-12-28 21:47:45.7982 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 21:47:45.8222 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 21:47:45.8372 Info Configuration initialized.
+2020-12-28 21:47:45.8372 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 21:48:20.5623 Info Configuration file change detected! Reloading in 1000ms...
+2020-12-28 21:48:20.5623 Info Configuration file change detected! Reloading in 1000ms...
+2020-12-28 21:48:20.5623 Info Configuration file change detected! Reloading in 1000ms...
+2020-12-28 21:48:21.5705 Info Reloading configuration...
+2020-12-28 21:48:21.5705 Info Configuring from an XML element in C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config...
+2020-12-28 21:48:21.5705 Info Message Template Auto Format enabled
+2020-12-28 21:48:21.5705 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 21:48:21.5705 Info Adding target FileTarget(Name=alldata)
+2020-12-28 21:48:21.5705 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 21:48:21.5705 Info Closing old configuration.
+2020-12-28 21:48:21.5901 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 21:49:57.7828 Info Message Template Auto Format enabled
+2020-12-28 21:49:57.7977 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 21:49:57.8465 Info Adding target FileTarget(Name=alldata)
+2020-12-28 21:49:57.8553 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 21:49:57.8767 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 21:49:57.8916 Info Configuration initialized.
+2020-12-28 21:49:57.9006 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:02:32.0340 Info Message Template Auto Format enabled
+2020-12-28 22:02:32.0473 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:02:32.0956 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:02:32.1054 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:02:32.1303 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:02:32.1468 Info Configuration initialized.
+2020-12-28 22:02:32.1568 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:05:31.9124 Info Message Template Auto Format enabled
+2020-12-28 22:05:31.9317 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:05:31.9842 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:05:31.9931 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:05:32.0219 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:05:32.0382 Info Configuration initialized.
+2020-12-28 22:05:32.0485 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:19:08.2821 Info Message Template Auto Format enabled
+2020-12-28 22:19:08.2950 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:19:08.3406 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:19:08.3406 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:19:08.3748 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:19:08.3909 Info Configuration initialized.
+2020-12-28 22:19:08.4014 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:19:12.3141 Info AppDomain Shutting down. Logger closing...
+2020-12-28 22:19:12.3339 Info Logger has been shut down.
+2020-12-28 22:23:34.9583 Info Message Template Auto Format enabled
+2020-12-28 22:23:34.9706 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:23:35.0187 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:23:35.0273 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:23:35.0508 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:23:35.0670 Info Configuration initialized.
+2020-12-28 22:23:35.0769 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:25:02.8570 Info Message Template Auto Format enabled
+2020-12-28 22:25:02.8701 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:25:02.9208 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:25:02.9295 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:25:02.9532 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:25:02.9680 Info Configuration initialized.
+2020-12-28 22:25:02.9773 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:27:17.3656 Info Message Template Auto Format enabled
+2020-12-28 22:27:17.3782 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:27:17.4385 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:27:17.4492 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:27:17.4761 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:27:17.4928 Info Configuration initialized.
+2020-12-28 22:27:17.4928 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:27:44.7661 Info Message Template Auto Format enabled
+2020-12-28 22:27:44.7801 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:27:44.8395 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:27:44.8520 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:27:44.8796 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:27:44.9011 Info Configuration initialized.
+2020-12-28 22:27:44.9011 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:34:54.9154 Info Message Template Auto Format enabled
+2020-12-28 22:34:54.9441 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:34:54.9950 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:34:54.9950 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:34:55.0302 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:34:55.0462 Info Configuration initialized.
+2020-12-28 22:34:55.0552 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:36:35.9998 Info Message Template Auto Format enabled
+2020-12-28 22:36:36.0138 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:36:36.0716 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:36:36.0716 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:36:36.1166 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:36:36.1166 Info Configuration initialized.
+2020-12-28 22:36:36.1400 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:41:37.2189 Info Message Template Auto Format enabled
+2020-12-28 22:41:37.2311 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:41:37.2809 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:41:37.2897 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:41:37.3188 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:41:37.3337 Info Configuration initialized.
+2020-12-28 22:41:37.3431 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:42:18.9065 Info Message Template Auto Format enabled
+2020-12-28 22:42:18.9207 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:42:18.9747 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:42:18.9837 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:42:19.0073 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:42:19.0073 Info Configuration initialized.
+2020-12-28 22:42:19.0305 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:47:37.6018 Info Message Template Auto Format enabled
+2020-12-28 22:47:37.6018 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:47:37.6694 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:47:37.6694 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:47:37.7031 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:47:37.7185 Info Configuration initialized.
+2020-12-28 22:47:37.7275 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:48:34.3819 Info Message Template Auto Format enabled
+2020-12-28 22:48:34.4033 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:48:34.4691 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:48:34.4790 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:48:34.5117 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:48:34.5284 Info Configuration initialized.
+2020-12-28 22:48:34.5389 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:50:55.5136 Info Message Template Auto Format enabled
+2020-12-28 22:50:55.5271 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:50:55.5816 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:50:55.5912 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:50:55.6169 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:50:55.6338 Info Configuration initialized.
+2020-12-28 22:50:55.6338 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-28 22:52:05.8356 Info Message Template Auto Format enabled
+2020-12-28 22:52:05.8356 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-28 22:52:05.8970 Info Adding target FileTarget(Name=alldata)
+2020-12-28 22:52:05.9060 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-28 22:52:05.9303 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-28 22:52:05.9459 Info Configuration initialized.
+2020-12-28 22:52:05.9459 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 15:35:38.5250 Info Message Template Auto Format enabled
+2020-12-29 15:35:38.5250 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 15:35:38.5839 Info Adding target FileTarget(Name=alldata)
+2020-12-29 15:35:38.5923 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 15:35:38.6154 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 15:35:38.6319 Info Configuration initialized.
+2020-12-29 15:35:38.6407 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 15:36:39.9863 Info Message Template Auto Format enabled
+2020-12-29 15:36:39.9984 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 15:36:40.0564 Info Adding target FileTarget(Name=alldata)
+2020-12-29 15:36:40.0564 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 15:36:40.0938 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 15:36:40.1147 Info Configuration initialized.
+2020-12-29 15:36:40.1251 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 15:37:57.6811 Info Message Template Auto Format enabled
+2020-12-29 15:37:57.6811 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 15:37:57.7525 Info Adding target FileTarget(Name=alldata)
+2020-12-29 15:37:57.7740 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 15:37:57.8020 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 15:37:57.8188 Info Configuration initialized.
+2020-12-29 15:37:57.8286 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 15:57:20.7566 Info Message Template Auto Format enabled
+2020-12-29 15:57:20.7696 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 15:57:20.8209 Info Adding target FileTarget(Name=alldata)
+2020-12-29 15:57:20.8209 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 15:57:20.8701 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 15:57:20.8853 Info Configuration initialized.
+2020-12-29 15:57:20.8853 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:02:34.8961 Info Message Template Auto Format enabled
+2020-12-29 16:02:34.9109 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:02:34.9719 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:02:34.9817 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:02:35.0093 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:02:35.0330 Info Configuration initialized.
+2020-12-29 16:02:35.0433 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:06:10.8276 Info Message Template Auto Format enabled
+2020-12-29 16:06:10.8396 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:06:10.8867 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:06:10.8867 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:06:10.9208 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:06:10.9396 Info Configuration initialized.
+2020-12-29 16:06:10.9493 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:08:53.5092 Info Message Template Auto Format enabled
+2020-12-29 16:08:53.5092 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:08:53.5739 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:08:53.5739 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:08:53.6074 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:08:53.6232 Info Configuration initialized.
+2020-12-29 16:08:53.6232 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:11:25.1184 Info Message Template Auto Format enabled
+2020-12-29 16:11:25.1184 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:11:25.1810 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:11:25.1810 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:11:25.2121 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:11:25.2267 Info Configuration initialized.
+2020-12-29 16:11:25.2267 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:24:52.6051 Info Message Template Auto Format enabled
+2020-12-29 16:24:52.6172 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:24:52.6628 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:24:52.6722 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:24:52.6973 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:24:52.7127 Info Configuration initialized.
+2020-12-29 16:24:52.7127 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:31:36.4986 Info Message Template Auto Format enabled
+2020-12-29 16:31:36.5108 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:31:36.5599 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:31:36.5599 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:31:36.5922 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:31:36.6073 Info Configuration initialized.
+2020-12-29 16:31:36.6073 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:33:36.7858 Info Message Template Auto Format enabled
+2020-12-29 16:33:36.8007 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:33:36.8646 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:33:36.8754 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:33:36.9019 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:33:36.9198 Info Configuration initialized.
+2020-12-29 16:33:36.9198 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:34:45.6493 Info Message Template Auto Format enabled
+2020-12-29 16:34:45.6678 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:34:45.7215 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:34:45.7312 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:34:45.7546 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:34:45.7700 Info Configuration initialized.
+2020-12-29 16:34:45.7789 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:35:41.3608 Info Message Template Auto Format enabled
+2020-12-29 16:35:41.3732 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:35:41.4286 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:35:41.4286 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:35:41.4629 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:35:41.4824 Info Configuration initialized.
+2020-12-29 16:35:41.4824 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 16:45:24.1144 Info Message Template Auto Format enabled
+2020-12-29 16:45:24.1279 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 16:45:24.1805 Info Adding target FileTarget(Name=alldata)
+2020-12-29 16:45:24.1805 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 16:45:24.2122 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 16:45:24.2266 Info Configuration initialized.
+2020-12-29 16:45:24.2266 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 17:00:32.0767 Info Message Template Auto Format enabled
+2020-12-29 17:00:32.0881 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 17:00:32.1413 Info Adding target FileTarget(Name=alldata)
+2020-12-29 17:00:32.1502 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 17:00:32.1748 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 17:00:32.1901 Info Configuration initialized.
+2020-12-29 17:00:32.1996 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
+2020-12-29 17:07:19.7792 Info Message Template Auto Format enabled
+2020-12-29 17:07:19.7916 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-29 17:07:19.8459 Info Adding target FileTarget(Name=alldata)
+2020-12-29 17:07:19.8550 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-12-29 17:07:19.8772 Info Validating config: TargetNames=alldata, ConfigItems=22, FilePath=C:\Repos\WooliesX\WooliesX\bin\Debug\netcoreapp2.1\NLog.config
+2020-12-29 17:07:19.8922 Info Configuration initialized.
+2020-12-29 17:07:19.9011 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.6.12219. Product version: 4.7.6+e16065c1f397a4b0a5beed10d2e79bbedc1fd1e6. GlobalAssemblyCache: False
