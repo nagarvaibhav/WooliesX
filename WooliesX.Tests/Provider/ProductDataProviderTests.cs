@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using NSubstitute;
 using NUnit.Framework;
 using System;
@@ -39,10 +40,11 @@ namespace WooliesX.Tests.Provider
         [Test]
         public async Task Getproduct_Should_Return_Response_Sucessfully()
         {
+            var products = MockDataProvider.GetProducts();
             var fakeHttpMessageHandler = new MockHttpMessageHandler(new HttpResponseMessage()
             {
                 StatusCode = HttpStatusCode.OK,
-                Content = new StringContent(MockDataProvider.GetProductsString(), Encoding.UTF8, "application/json")
+                Content = new StringContent(JsonConvert.SerializeObject(products), Encoding.UTF8, "application/json")
             });
             var fakeHttpClient = new HttpClient(fakeHttpMessageHandler);
 
@@ -52,11 +54,11 @@ namespace WooliesX.Tests.Provider
             Assert.IsNotNull(result);
             Assert.AreEqual(3, result.Count);
             Assert.AreEqual("Test Product A", result[0].Name);
-            Assert.AreEqual(99.99, result[0].Price);
+            Assert.AreEqual(45, result[0].Price);
             Assert.AreEqual("Test Product B", result[1].Name);
-            Assert.AreEqual(101.99, result[1].Price);
+            Assert.AreEqual(51, result[1].Price);
             Assert.AreEqual("Test Product C", result[2].Name);
-            Assert.AreEqual(10.99, result[2].Price);
+            Assert.AreEqual(43, result[2].Price);
         }
 
         [Test]
@@ -71,7 +73,82 @@ namespace WooliesX.Tests.Provider
 
             _httpClient.CreateClient().Returns(fakeHttpClient);
 
-            Assert.ThrowsAsync<Exception>(async() => await _productDataProvider.GetProducts());
+            var result = Assert.ThrowsAsync<Exception>(async () => await _productDataProvider.GetProducts());
+            Assert.AreEqual("Wooliesx product resource Api Returns unsuccessful status.Code: "+ HttpStatusCode.InternalServerError, result.Message);
         }
+
+        [Test]
+        public void Getproduct_Should_Throw_Exception_For_Any_Exception()
+        {
+            var fakeHttpMessageHandler = new MockHttpMessageHandler(new HttpResponseMessage()
+            {
+                StatusCode = HttpStatusCode.InternalServerError,
+                Content = new StringContent("Fake Error", Encoding.UTF8, "application/json")
+            });
+            var fakeHttpClient = new HttpClient(fakeHttpMessageHandler);
+
+            _httpClient.When(x => x.CreateClient()).Do(x => { throw new Exception("Fake Exception"); });
+
+            var result = Assert.ThrowsAsync<Exception>(async () => await _productDataProvider.GetProducts());
+            Assert.AreEqual("Fake Exception", result.Message);
+        }
+
+        [Test]
+        public async Task GetShoppersHistory_Should_Return_Response_Sucessfully()
+        {
+            var shoppersHistory = MockDataProvider.GetShoppersHistory();
+            var fakeHttpMessageHandler = new MockHttpMessageHandler(new HttpResponseMessage()
+            {
+                StatusCode = HttpStatusCode.OK,
+                Content = new StringContent(JsonConvert.SerializeObject(shoppersHistory), Encoding.UTF8, "application/json")
+            });
+            var fakeHttpClient = new HttpClient(fakeHttpMessageHandler);
+
+            _httpClient.CreateClient().Returns(fakeHttpClient);
+
+            var result = (await _productDataProvider.GetShoppersHistory()).ToList();
+            Assert.IsNotNull(result);
+            Assert.AreEqual(3, result.Count);
+            Assert.AreEqual(2, result[0].Products.Count());
+            Assert.AreEqual(123, result[0].CustomerId);
+            Assert.AreEqual(1, result[1].Products.Count());
+            Assert.AreEqual(23, result[1].CustomerId);
+            Assert.AreEqual(1, result[2].Products.Count());
+            Assert.AreEqual(54, result[2].CustomerId);
+        }
+
+        [Test]
+        public void GetShoppersHistory_Should_Throw_Exception_For_UnSucessfull_Api_Call()
+        {
+            var fakeHttpMessageHandler = new MockHttpMessageHandler(new HttpResponseMessage()
+            {
+                StatusCode = HttpStatusCode.InternalServerError,
+                Content = new StringContent("Fake Error", Encoding.UTF8, "application/json")
+            });
+            var fakeHttpClient = new HttpClient(fakeHttpMessageHandler);
+
+            _httpClient.CreateClient().Returns(fakeHttpClient);
+
+            var result = Assert.ThrowsAsync<Exception>(async () => await _productDataProvider.GetShoppersHistory());
+            Assert.AreEqual("Wooliesx ShoppersHistory resource Api Returns unsuccessful status.Code: " + HttpStatusCode.InternalServerError, result.Message);
+        }
+
+        [Test]
+        public void GetShoppersHistory_Should_Throw_Exception_For_Any_Exception()
+        {
+            var fakeHttpMessageHandler = new MockHttpMessageHandler(new HttpResponseMessage()
+            {
+                StatusCode = HttpStatusCode.InternalServerError,
+                Content = new StringContent("Fake Error", Encoding.UTF8, "application/json")
+            });
+            var fakeHttpClient = new HttpClient(fakeHttpMessageHandler);
+
+            _httpClient.When(x => x.CreateClient()).Do(x => { throw new Exception("Fake Exception"); });
+
+            var result = Assert.ThrowsAsync<Exception>(async () => await _productDataProvider.GetShoppersHistory());
+            Assert.AreEqual("Fake Exception", result.Message);
+        }
+
+
     }
 }

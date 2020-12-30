@@ -50,6 +50,7 @@ namespace WooliesX.Services
             }
             return products;
         }
+
         public decimal GetTrolleyTotal(TrolleyRequest request)
         {
             if(request == null || request.Products == null || request.Quantities == null)
@@ -64,7 +65,7 @@ namespace WooliesX.Services
                 throw new Exception("Error in calculating trolley price.Quantity is missing");
 
             if (string.Compare(product.Name, productQuantity.Name, false) != 0)
-                throw new Exception("Error in calculating trolley price.Quantity is missing for product:" + product.Name);
+                throw new Exception("Error in calculating trolley price.Quantity is missing for product: " + product.Name);
 
             int specialQuantity = 0;
             int specialTotal = 0;

@@ -39,7 +39,7 @@ namespace WooliesX.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error in getting products");
-                return StatusCode(500, "error is getting products");
+                return StatusCode(500, "Error in getting products");
             }
         }
 
